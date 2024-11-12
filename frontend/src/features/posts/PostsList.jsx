@@ -13,9 +13,6 @@ function PostsList() {
       
       try {
         const response = await fetch(`${API_URL}`);
-        console.log('hello');
-
-        console.log({ response });
 
         if (response.ok) {
           const json = await response.json();
@@ -33,8 +30,6 @@ function PostsList() {
     }
     loadPosts();
   }, []);
-
-  console.log({ posts });
 
   return (
     <div>
