@@ -38,6 +38,7 @@ function PostsList() {
         <div key={post.id} className='post-container'>
           <h2><Link to={`/posts/${post.id}`} className='post-title'>{post.title}</Link></h2>
           <p>{post.body}</p>
+          <button><Link to={`/posts/${post.id}/edit`}>Edit</Link></button>
        </div>
       ))}
     </div>
